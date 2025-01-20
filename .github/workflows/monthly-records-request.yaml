@@ -23,15 +23,15 @@ jobs:
           echo "YEAR=$YEAR" >> $GITHUB_ENV
 
       - name: Generate Message Body
-        uses: archetect/render-action@v1
+        uses: archetect/render-action@main
         with:
           source: "monthly-records-request.archetype" 
           answers: |
-            ${{ fromJson('{
+            '{
               "recipient-name": "${{ vars.RECIPIENT_NAME }}",
               "year": "${{ env.YEAR }}",
               "month": "${{ env.MONTH }}"
-            }') }}
+            }'
 
 
       - name: Echo Body
