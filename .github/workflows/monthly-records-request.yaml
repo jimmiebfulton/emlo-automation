@@ -24,7 +24,6 @@ jobs:
 
       - name: Generate Message Body
         uses: archetect/render-action@v1
-        env:
         with:
           source: "monthly-records-request.archetype" 
           answers: |
