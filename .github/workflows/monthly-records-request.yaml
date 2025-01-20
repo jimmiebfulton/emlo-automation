@@ -28,7 +28,7 @@ jobs:
           source: "monthly-records-request.archetype" 
           answers: |
             {
-              "recipient-name": "${{ vars.RECIPIENT-NAME }}",
+              "recipient-name": "${{ vars.RECIPIENT_NAME }}",
               "year": "${{ env.YEAR }}",
               "month": "${{ env.MONTH }}"
             }
