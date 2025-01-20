@@ -32,8 +32,8 @@ jobs:
               "month": "${{ env.MONTH }}"
             }
         with:
-          source: "montly-records-request.archetype" 
-          answers: ${{ env.ANSWERS }}
+          source: "monthly-records-request.archetype" 
+          answers: ${{ toJson(env.ANSWERS) }}
 
       - name: Echo Body
         run: |
