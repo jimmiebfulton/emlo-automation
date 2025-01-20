@@ -28,11 +28,10 @@ jobs:
           source: "monthly-records-request.archetype" 
           answers: |
             {
-              "recipient-name": "Foo",
+              "recipient-name": "${{ vars.RECIPIENT-NAME }}",
               "year": "${{ env.YEAR }}",
               "month": "${{ env.MONTH }}"
             }
-
 
       - name: Echo Body
         run: |
