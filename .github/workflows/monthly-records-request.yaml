@@ -1,7 +1,8 @@
 name: Monthly Records Request
 
 on:
-  workflow_dispatch:
+  push
+  workflow_dispatch
   schedule:
     - cron: "* * 1 * *"
 
