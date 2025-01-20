@@ -27,11 +27,11 @@ jobs:
         with:
           source: "monthly-records-request.archetype" 
           answers: |
-            ${{ fromJson('{
+            {
               "recipient-name": "${{ vars.RECIPIENT_NAME }}",
               "year": "${{ env.YEAR }}",
               "month": "${{ env.MONTH }}"
-            }') }}
+            }
 
 
       - name: Echo Body
