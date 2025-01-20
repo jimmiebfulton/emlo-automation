@@ -27,13 +27,13 @@ jobs:
         env:
           ANSWERS: |
             {
-              "recipient-name": "${{ env.RECIPIENT_NAME }}",
+              "recipient-name": "${{ vars.RECIPIENT_NAME }}",
               "year": "${{ env.YEAR }}",
               "month": "${{ env.MONTH }}"
             }
         with:
           source: "montly-records-request.archetype" 
-          answers: $ANSWERS
+          answers: ${{ env.ANSWERS }}
 
       - name: Echo Body
         run: |
