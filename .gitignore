@@ -1,0 +1,10 @@
+# Mac OS
+.DS_Store
+
+# Editor backup
+*.swp
+*~
+
+# IntelliJ IDEA project files
+.idea/
+

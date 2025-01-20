@@ -1,0 +1,29 @@
+{{ recipient-name }},
+
+This is a request for ALL Embarcadero Lofts association records received/produced/acquired in the month of {{ month }} {{ year }} or
+any other documents that have been received/produced/acquired over the past year that have not been previously provided.
+
+You have 10 business days to comply.  For any documents for this time period that arrive after the next 10 business days,
+they will be produced in the next monthly request to follow.
+
+Association Records include, but are not limited to:
+- Ledgers
+- Budgets
+- Financial Reports
+- Account Lists and Statements
+- Meeting Minutes
+- Invoices
+- Copies of Checks
+- Contracts
+- Insurance Packages
+
+Purpose:
+
+This board has repeatedly and persistently breached their fiduciary duties, through neglect and/or willful intent, 
+engaged in gross conflicts of interests and self-serving conduct, and have consistently placed their loyalties in vendors
+over the membership. Previous record requests have resulted in disturbing findings, and have demonstrated that this board
+cannot be trusted. Since this board insists on engaging in this conduct and schemes, I'm going to insist on collecting 
+and cataloging evidence against them and their collaborating vendors and reporting my findings to appropriate audiences.
+
+Jimmie Fulton
+Embarcadero Lofts - Unit 611

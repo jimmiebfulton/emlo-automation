@@ -1,0 +1,40 @@
+name: Monthly Records Request
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* * 1 * *"
+
+
+jobs:
+  send-request:
+    name: Send Records Request
+    runs-on: ubuntu-linux
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Date Inputs
+        shell: bash
+        run: |
+          MONTH=date -d "-1 day" +%B
+          YEAR=date -d "-1 day" +%Y
+          echo "MONTH=$MONTH" >> $GITHUB_ENV
+          echo "YEAR=$YEAR" >> $GITHUB_ENV
+
+      - name: Generate Message Body
+        uses: archetect/render-action@v1
+        env:
+          ANSWERS: |
+            {
+              "recipient-name": "${{ env.RECIPIENT_NAME }}",
+              "year": "${{ env.YEAR }}",
+              "month": "${{ env.MONTH }}"
+            }
+        with:
+          source: "montly-records-request.archetype" 
+          answers: $ANSWERS
+
+      - name: Echo Body
+        run: |
+          cat body.txt
+
