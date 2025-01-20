@@ -17,8 +17,8 @@ jobs:
       - name: Generate Date Inputs
         shell: bash
         run: |
-          MONTH=date -d "-1 day" +%B
-          YEAR=date -d "-1 day" +%Y
+          MONTH=$(date -d "-1 day" +%B)
+          YEAR=$(date -d "-1 day" +%Y)
           echo "MONTH=$MONTH" >> $GITHUB_ENV
           echo "YEAR=$YEAR" >> $GITHUB_ENV
 
